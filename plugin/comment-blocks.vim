@@ -15,7 +15,7 @@ function CommentBlock (word)
     let width =  strlen(a:word) + 4
 
     " Build the comment box and put the comment inside it...
-    return repeat(#,width) . "\<CR>"
+    return repeat("#",width) . "\<CR>"
     \    . "# " . a:word . " #" . "\<CR>"
-    \    . repeat(#,width) . "\<CR>"
+    \    . repeat("#",width) . "\<CR>"
 endfunction
